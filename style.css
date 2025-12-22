@@ -1,108 +1,162 @@
+/* RESET */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.navbar{
-    background-color: white;
-    height: 16vh;
-    width: 100vw;
+
+body{
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
 }
+.resu{
+    padding: 40px;
+}
+
+/* ================= NAVBAR ================= */
+.navbar{
+    width: 100%;
+    background: #fff;
+}
+
 .nav{
     display: flex;
     justify-content: space-between;
-    padding: 50px;
+    align-items: center;
+    padding: 30px 50px;
 }
-b{
-    font-size: 30px;
-    color: orange;
-}
-.option-one{
-    display: flex;
-    gap: 20px;
-}
+
+.option-one,
 .option-two{
     display: flex;
-     gap: 20px;
+    gap: 20px;
+    font-size: 14px;
 }
+
+.option-one ul,
+.option-two ul{
+    list-style: none;
+    cursor: pointer;
+}
+
+b{
+    font-size: 40px;
+    color: orange;
+}
+
+/* ================= HERO SECTION ================= */
 .pg-two{
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
+
 .pic{
-    padding: 5%;
-    height: 100%;
     width: 100%;
-    position: relative;
-    opacity: 30%;
+    height: auto;
+    opacity: 0.3;
 }
+
 .punch{
     position: absolute;
-    font-size: 100px;
-    font-weight: 1000;
-    animation-name: position-change;
-    animation-duration: 3s;
-    animation-delay: 1s;
-    animation-iteration-count: 1;
+    text-align: center;
+    font-weight: 800;
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    animation: slideUp 1.5s ease forwards;
 }
-@keyframes position-change{
-    /* 0%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(90px);
-    }
-    100%{
-        transform: translateY(0px); */
-        from{
-            transform: translateY(100px);
-        }
-        to{
-            transform: translateY(0px);
-        }
-    }
-    .intro h1{
-       padding-left: 45%;
-    }
-h1{
-    font-size: x-large;
-    font-weight: 600;
 
+@keyframes slideUp{
+    from{
+        transform: translateY(60px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
+
+/* ================= ABOUT SECTION ================= */
+.intro{
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.intro h1{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
 .introduction{
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 3%;
-    font-size: large;
-    font-weight: 900;
-    color: rgba(129, 127, 127, 0.624);
+    max-width: 900px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(129,127,127,0.7);
+    font-weight: 500;
 }
-button{
-    height: 60px;
-  width: 250px; 
-  margin-left: 42%;
-  margin-top: 60px;
-  margin-bottom: 80px;
-  font-size: 20px;
-  color: rgba(128, 128, 128, 0.788);
-}
-button a{
+
+/* ================= BUTTON ================= */
+.resume-btn{
+    display: block;
+    width: fit-content;
+    margin: 50px auto;
+    padding: 15px 40px;
+    border: 1px solid gray;
     text-decoration: none;
-}
-button:hover{
     color: gray;
+    font-size: 18px;
+    transition: 0.3s;
 }
+
+.resume-btn:hover{
+    background: gray;
+    color: white;
+    border-color: gray;
+}
+
+/* ================= FOOTER TEXT ================= */
 .small-text{
-    color: gray;
-    font-size: large;
-    font-weight: 900;
-    color: rgba(129, 127, 127, 0.624);
-    padding-left: 43%;
-    padding-bottom: 80px;
+    text-align: center;
+    font-size: 16px;
+    color: rgba(129,127,127,0.7);
+    margin-bottom: 30px;
 }
+
 i{
-   font-size: 30px;
-   padding-left: 48%;
-   padding-bottom: 70px;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px){
+
+    .nav{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .option-one,
+    .option-two{
+        justify-content: center;
+        font-size: 12px;
+    }
+
+    b{
+        font-size: 24px;
+    }
+
+    .pg-two{
+        min-height: 60vh;
+    }
+
+    .introduction{
+        font-size: 16px;
+    }
 }
