@@ -122,3 +122,80 @@ footer {
   font-size: 14px;
   opacity: 0.5;
 }
+/* ---------- MOBILE (TABLET & PHONE) ---------- */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    height: 90px;
+    padding: 0;
+  }
+
+  .slogan {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .login-btn {
+    padding: 6px 14px;
+    font-size: 14px;
+  }
+
+  /* HERO */
+  .hero {
+    height: 70vh;
+  }
+
+  .hero-img {
+    width: 90%;
+  }
+
+  /* OVERLAY CARD */
+  .overlay {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .overlay h2 {
+    font-size: 22px;
+  }
+
+  .overlay p {
+    font-size: 13px;
+  }
+}
+
+/* ---------- SMALL PHONES ---------- */
+@media (max-width: 480px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .slogan {
+    position: static;
+    transform: none;
+    font-size: 20px;
+  }
+
+  .hero {
+    height: 65vh;
+  }
+
+  .overlay {
+    width: 95%;
+  }
+
+  .ending h2 {
+    font-size: 24px;
+  }
+
+  .ending p {
+    font-size: 14px;
+  }
+}
