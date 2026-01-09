@@ -233,26 +233,80 @@ i{
 }
 
 /* ================= MOBILE ================= */
-@media (max-width: 768px){
+/* ================= PHONE (max-width: 480px) ================= */
+@media (max-width: 480px){
 
+  /* GENERAL PADDING */
+  .resu{
+    padding: 20px;
+  }
+
+  /* NAVBAR */
   .nav{
-    flex-direction: column;
-    gap: 30px;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .option-one,
+  .option-two{
+    font-size: 14px;
   }
 
   b{
-    font-size: 26px;
+    font-size: 22px;
+  }
+
+  /* HERO SECTION */
+  .pg-two{
+    min-height: 55vh;
+  }
+
+  .punch{
+    font-size: 2.2rem;
+  }
+
+  /* ABOUT */
+  .introduction{
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  /* PROJECT SECTION */
+  .section h2{
+    font-size: 28px;
   }
 
   .row{
-    padding: 0 20px;
+    gap: 20px;
+    padding: 0 10px;
   }
 
+  /* CARD */
   .card{
-    min-width: 300px;
+    min-width: 260px;
+    border-radius: 10px;
   }
 
+  /* IMAGE */
   .card img{
-    height: 220px;
+    height: 200px;
+    padding: 8px;
+  }
+
+  /* BUTTON BAR */
+  .card-button{
+    padding: 14px;
+  }
+
+  /* BUTTONS */
+  .btn{
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  /* RESUME BUTTON */
+  .resume-btn{
+    font-size: 16px;
+    padding: 12px 30px;
   }
 }
