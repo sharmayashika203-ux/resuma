@@ -233,7 +233,6 @@ i{
 }
 
 /* ================= MOBILE ================= */
-/* ================= PHONE (max-width: 480px) ================= */
 @media (max-width: 480px){
 
   /* GENERAL PADDING */
@@ -245,6 +244,7 @@ i{
   .nav{
     padding: 20px;
     gap: 15px;
+  flex-direction: column;
   }
 
   .option-one,
