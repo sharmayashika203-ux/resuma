@@ -143,7 +143,9 @@ body {
   .section {
     padding: 16px;
   }
-
+ .nav-links{
+  display: none;
+ }
   .row {
     grid-auto-columns: 160px;
   }
