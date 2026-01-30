@@ -1,91 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Landing</title>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YASHIKA | FULL STACK</title>
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="resu">
-<header class="navbar">
-    <nav class="nav">
-        <div class="option-one">
-            <ul><a href="#pg">HOME</a></ul>
-            <ul><a href="#abt">ABOUT</a></ul>
-        </div>
 
-        <b>YASHIKA.</b>
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar">
+    <div class="profile">
+      <img src="./yashika .jpeg" alt="Yashika">
+      <h2>YASHIKA</h2>
+    </div>
 
-        <div class="option-two">
-            <ul><a href="#work">WORK</a></ul>
-            <ul><a href="#contact">CONTACT </a></ul>
-        </div>
-    </nav>
-</header>
+    <div class="socials">
+  <a href="https://www.instagram.com/yashikajang4632" target="_blank">
+    <i class="ri-instagram-line"></i>
+  </a>
 
-<main>
-    <section id="pg" class="pg-two">
-        <img class="pic" src="./webpage.jpg" alt="Yashika profile photo">
-        <p class="punch">
-            Developer <br>
-            Problem Solver <br>
-            Learner.
-        </p>
-    </section>
-
-    <section class="intro">
-        <h1 id="abt">ABOUT ME</h1>
-        <p class="introduction">
-            I am a passionate MCA student with a background in computer applications and a strong interest in web development. After completing my BCA from MDU University(Maharishi Dayanand University), I am currently pursuing my MCA from MDU, where I am learning modern technologies and building practical projects using HTML, CSS, and JavaScript. I aim to start my career as a web or software developer and grow through continuous learning and real-world challenges.
-        </p>
-    </section>
-    
-    <section class="section">
-    <h2 id="work">PROJECT</h2>
-    <div class="row">
-      <div class="card">
-             <img src="./netflix-banner.avif" />
-            <!----------- button--------------->
-            <div class="card-button">
-                <a href="" class="btn code-btn">CODE</a>
-               <a href="./netflix.html" class="btn view-btn">VIEW PROJECT</a>
-
-              </div>
-        </div>
-      <div class="card">
-             <img src="./discord.webp" />
-            <!----------- button--------------->
-            <div class="card-button">
-                <a href="" class="btn code-btn">CODE</a>
-                <a href="./discord2.html" class="btn view-btn">VIEW PROJECT</a>
-              </div>
-        </div>
-      <div class="card">
-              <img src="./photo.jpeg" />
-            <!----------- button--------------->
-            <div class="card-button">
-                <a href="" class="btn code-btn">CODE</a>
-                <a href="./photofly.html" class="btn view-btn">VIEW PROJECT</a>
-              </div>
-           </div>
-           <div class="card">
-              <img src="./boAt.webp" />
-            <!----------- button--------------->
-            <div class="card-button">
-                <a href="" class="btn code-btn">CODE</a>
-                <a href="./boat.html" class="btn view-btn">VIEW PROJECT</a>
-              </div>
-           </div>
-      </div>
-  </section>
-
-    <a id="contact" href="./resum.html" class="resume-btn">View my resume</a>
-
-    <p class="small-text">being a follower isn't so bad.</p>
+  <a href="https://www.linkedin.com/in/yashika-jangra-6659103a6" target="_blank">
     <i class="ri-linkedin-box-fill"></i>
-</main>
+  </a>
+
+  <a href="https://github.com/sharmayashika203-ux" target="_blank">
+    <i class="ri-github-fill"></i>
+  </a>
+  <a href="mailto:sharmayashika203@gmail.com" target="_blank">
+    <i class="ri-mail-line"></i>
+  </a>
 </div>
+
+
+    <ul class="side-menu">
+     <li><a href="#pg"><i class="ri-home-4-line"></i> Home</a></li>
+      <li><a href="#abt"><i class="ri-user-3-line"></i> About</a></li>
+     <li><a href="#skills"><i class="ri-tools-line"></i> Skills</a></li>
+      <li><a href="#work"><i class="ri-code-s-slash-line"></i> Projects</a></li>
+      <li><a href="#resume"><i class="ri-profile-line"></i> Resume</a></li>
+     <li><a href="#contact"><i class="ri-mail-fill"></i> Contact</a></li>
+
+
+
+    </ul>
+  </aside>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <div class="resu">
+
+    <!-- HERO -->
+    <section id="pg" class="pg-two">
+      <img class="pic" src="./yashiweb.jpeg" alt="profile">
+      <p class="punch">
+        Developer <br>
+        Problem Solver <br>
+        Learner.
+      </p>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="intro">
+      <h1 id="abt">ABOUT ME</h1>
+      <p class="introduction">
+        I am a passionate MCA student with a background in computer applications and a strong interest in web development.
+        I completed my BCA from MDU and am currently pursuing MCA, building real projects using HTML, CSS, and JavaScript.
+      </p>
+    </section>
+   <!-- SKILLS -->
+<section class="skills-section">
+  <h2 id="skills">Skills</h2>
+
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <i class="ri-html5-fill"></i>
+      <h3>HTML5</h3>
+    </div>
+
+    <div class="skill-card">
+      <i class="ri-css3-fill"></i>
+      <h3>CSS3</h3>
+    </div>
+
+    <div class="skill-card">
+      <i class="ri-javascript-fill"></i>
+      <h3>JavaScript</h3>
+    </div>
+
+    <div class="skill-card">
+      <i class="ri-layout-4-fill"></i>
+      <h3>Responsive Design</h3>
+    </div>
+
+    <div class="skill-card">
+      <i class="ri-git-branch-fill"></i>
+      <h3>Git & GitHub</h3>
+    </div>
+
+    <div class="skill-card">
+      <i class="ri-computer-line"></i>
+      <h3>Basic Web Projects</h3>
+    </div>
+
+  </div>
+</section>
+
+    <!-- PROJECTS -->
+    <section class="section">
+  <h2 id="work">PROJECTS</h2>
+
+  <div class="row">
+
+    <!-- PROJECT 1 -->
+    <div class="card">
+      <img src="./netflix-banner.avif">
+      <div class="card-button">
+        <a href="#" class="btn code-btn">CODE</a>
+        <a href="./netflix.html" class="btn view-btn">VIEW</a>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="card">
+      <img src="./discord-banner.png">
+      <div class="card-button">
+        <a href="#" class="btn code-btn">CODE</a>
+        <a href="./discord.html" class="btn view-btn">VIEW</a>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="card">
+      <img src="./photo.jpeg">
+      <div class="card-button">
+        <a href="#" class="btn code-btn">CODE</a>
+        <a href="./photofly.html" class="btn view-btn">VIEW</a>
+      </div>
+    </div>
+
+    <!-- PROJECT 4 (boAt) ✅ -->
+    <div class="card">
+      <img src="./boAt.webp">
+      <div class="card-button">
+        <a href="#" class="btn code-btn">CODE</a>
+        <a href="./boat.html" class="btn view-btn">VIEW</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- resume-->
+    <a id="resume" href="./resum.html" class="resume-btn">View My Resume</a>
+
+    <footer>
+      <p class="small-text">being a follower isn't so bad.</p>
+      <i class="ri-linkedin-box-fill"></i>
+    </footer>
+ 
+    <!-- CONTACT SECTION -->
+<section class="contact-section" id="contact">
+
+  <h2 class="contact-title">Get <span>In Touch</span></h2>
+
+  <div class="contact-container">
+
+    <!-- LEFT -->
+    <div class="contact-info">
+      <h3>Contact Information</h3>
+      <p>
+        Feel free to reach out to me for any questions or opportunities.
+        I’m always open to discussing new projects and ideas.
+      </p>
+
+      <div class="info-item">
+        <i class="ri-map-pin-line"></i>
+        <span>India</span>
+      </div>
+
+      <div class="info-item">
+        <i class="ri-mail-line"></i>
+        <span>yashikajang4632@gmail.com</span>
+      </div>
+
+      <div class="info-item">
+        <i class="ri-phone-line"></i>
+        <span>+91 9354796192</span>
+      </div>
+
+      <div class="contact-socials">
+        <a href="https://www.instagram.com/yashikajang4632" target="_blank"><i class="ri-instagram-line"></i></a>
+        <a href="https://www.linkedin.com/in/yashika-jangra-6659103a6" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+        <a href="https://github.com/sharmayashika203-ux" target="_blank"><i class="ri-github-fill"></i></a>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <form class="contact-form">
+      <h3>Send Me a Message</h3>
+
+      <div class="form-row">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+      </div>
+
+      <input type="text" placeholder="Subject" required>
+      <textarea placeholder="Message" rows="5" required></textarea>
+
+      <button type="submit">
+        Send Message <i class="ri-send-plane-fill"></i>
+      </button>
+    </form>
+
+  </div>
+</section>
+
+
+  </div>
+
 </body>
 </html>
