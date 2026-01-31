@@ -278,49 +278,76 @@ body{
 
 .small-text{
   text-align: center;
-  margin: 40px 0;
+  margin-top: 40px;
+padding: 3px;  
+background-color: #0b0f14;
+  color:white;
 }
 
 /* ================================================= */
 /* ================= MOBILE ======================== */
 /* ================================================= */
 
-@media(max-width:768px){
+@media (max-width: 768px){
 
   /* SIDEBAR → TOP NAVBAR */
   .sidebar{
     position: relative;
     width: 100%;
     height: auto;
+    padding: 10px;
     display: flex;
-    flex-direction: column;
+    align-items: flex-start;
+    gap: 75px;
+    background-color: #0b0f14a5;
+  }
+
+  /* PROFILE IMAGE LEFT */
+  .profile{
+    text-align: left;
+  }
+
+  .profile img{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+   margin-left: 75px;
+  }
+
+  .profile h2{
+    display: none; 
+  }
+
+  /* SOCIALS (OPTIONAL) */
+  .socials{
+    display: flex; 
+    justify-content: center;
     align-items: center;
   }
 
+  /* MENU → COLUMN (LEFT SIDE) */
   .side-menu{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 20px;
+    display: none;
+    flex-direction: column;   /* ✅ column */
+    align-items: flex-start; /* ✅ left aligned */
+    margin-top: 0;
+    width: auto;
+  
   }
 
   .side-menu li{
-    margin-bottom: 0;
+    margin-bottom: 12px;
   }
 
   .side-menu a{
     font-size: 14px;
+    gap: 10px;
   }
 
   /* MAIN CONTENT */
   .resu{
     margin-left: 0;
     padding: 20px;
-  }
-
-  /* HERO */
-  .pg-two{
-    min-height: 60vh;
   }
 
   /* PROJECTS → COLUMN (NO SCROLL) */
